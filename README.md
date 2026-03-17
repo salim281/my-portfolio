@@ -1,17 +1,20 @@
 # Hi, I'm Salim 👋
 
-🎨 Graphic Designer  
-💻 Learning Web Development  
-📍 Nigeria  
+🎨 I am Young tech professional, Graphic Designer, aspiring Computer Scientist. 
+💻 Learning Web Development and Python programming. 
+📍 I am living in Nigeria  
 
 ## 🔥 Skills
-- Photoshop
+- Photoshop & CorelDraw
+- Certified Generative AI skill (LinkedIn)
+- Certified AI-Powered Product & UX. 
 - Canva
-- HTML & CSS (beginner)
+- Python, HTML & CSS (beginner)
 
 ## 📁 Projects
-- Phone Repair Banner Design
-- Ramadan Poster Design
+- Blog
+- Designs
 
 ## 📞 Contact Me
 - WhatsApp: +2347032488675
+- Email: salimkabiru75@gmail.com
