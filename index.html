@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Salim | Portfolio</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f7ff;
+}
+
+/* Navigation */
+
+nav{
+    background:#2660e2;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:18px;
+    color:gray;
+}
+
+.btn{
+    display:inline-block;
+    background:#2660e2;
+    color:white;
+    padding:10px 18px;
+    border-radius:5px;
+    text-decoration:none;
+    margin-top:15px;
+}
+
+/* Projects */
+
+#projects{
+    padding:40px 20px;
+    text-align:center;
+}
+
+#projects h2{
+    color:#2660e2;
+    margin-bottom:20px;
+}
+
+.projects-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.project-card{
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-card a{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    color:white;
+    background:#2660e2;
+    padding:8px 14px;
+    border-radius:4px;
+}
+
+/* Certificate Image */
+
+#certificate img{
+    margin-top:20px;
+    width:300px;
+    border-radius:6px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+</style>
+
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+<section class="hero">
+    <h1>Hello, I'm Salim</h1>
+    <p>Graphic Designer | Python Programmer | Aspiring Computer Scientist
+    </p>
+    <a class="btn" href="#projects">View My Work</a>
+
+</section>
+
+<section id="projects">
+    
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Login System</h3>
+            <p>A simple login system with dashboard using Python.</p>
+            <a href="login.html">View Project</a>
+        </div>
+
+
+<div class="project-card">
+<h3>SkillSpring Blog</h3>
+<p>A blog where I share tech ideas and learning resources.</p>
+<a href="https://skillspring.blogspot.com">Visit Blog</a>
+</div>
+
+
+<div class="project-card">
+    <h3>Responsive Portfolio</h3>
+    <p>My personal developer portfolio built with HTML and CSS.</p>
+    <a href="#" onclick="alert('This is the portfolio you are viewing')">View Project</a>
+</div>
+
+<div class="project-card">
+    <h3>My Certificates</h3>
+    <p>Learned how to design user-friendly digital products and integrate AI tools into product development.</p>
+    <a href="" id="viewCert">View Certificate</a>
+</div>
+
+</div>
+
+
+<!-- My Certificate will appear here after user click the link -->
+
+<div id="certificate"></div>
+
+</section>
+
+
+<script>
+
+document.getElementById("viewCert").onclick = function(){
+
+let img = document.createElement("img");
+
+img.src = "https://api2.sololearn.com/v2/certificates/CC-UBPXOMSJ/image/png?t=639088994197783790";
+
+img.alt = "My Certificate";
+
+document.getElementById("certificate").appendChild(img);
+
+/* disable the button after first click */
+
+this.style.pointerEvents = "none";
+this.style.opacity = "0.5";
+this.innerText = "Certificate Viewed";
+
+}
+</script>
+
+</body>
+</html>
